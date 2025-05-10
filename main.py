@@ -2,7 +2,7 @@ import sys
 from parsers.csv_parser import parse_csv
 from parsers.arg_parser import parse_args
 from reports.payout_report import generate_payout_report
-from utils.utils import write_json_report, load_data
+from utils.report_utils import write_json_report, load_data
 
 
 REPORT_GENERATORS = {
@@ -18,7 +18,8 @@ def main():
 		data = load_data(args.files)
 		report_func = REPORT_GENERATORS[args.report]
 		report = report_func(data)
-		write_json_report(report, 'output/report.json')
+		output_path = args.output
+		write_json_report(report, output_path)
 	except Exception as e:
 		print(f"Failed to generate report: {e}")
 		sys.exit(1)

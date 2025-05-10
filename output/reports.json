@@ -1,0 +1,32 @@
+{
+    "HR": {
+        "employees": [
+            {
+                "name": "Grace Lee",
+                "hours": 160,
+                "rate": 45,
+                "payout": 7200
+            },
+            {
+                "name": "Ivy Clark",
+                "hours": 158,
+                "rate": 38,
+                "payout": 6004
+            }
+        ],
+        "total_hours": 318,
+        "total_payout": 13204
+    },
+    "Marketing": {
+        "employees": [
+            {
+                "name": "Henry Martin",
+                "hours": 150,
+                "rate": 35,
+                "payout": 5250
+            }
+        ],
+        "total_hours": 150,
+        "total_payout": 5250
+    }
+}
